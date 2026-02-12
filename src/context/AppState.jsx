@@ -5,9 +5,10 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const AppState = (props) => {
-  const url = "http://localhost:3001/api";
+  // const url = "http://localhost:3001/api";
 
-  // const url = "https://mern-e-commerce-api-youtube.onrender.com/api";
+  // Use the deployed backend API root (no trailing slash)
+  const url = "https://ecom-user-backend.vercel.app/api";
 
 
   const [products, setProducts] = useState([]);

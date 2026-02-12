@@ -6,7 +6,9 @@ import RelatedProduct from "./RelatedProduct";
 const ProductDetail = () => {
   const [product, setProduct] = useState();
   const { id } = useParams();
-  const url = "http://localhost:3001/api";
+  // const url = "http://localhost:3001/api";
+  const url = "https://ecom-user-backend.vercel.app/api";
+
 
   useEffect(() => {
     const fetchProduct = async () => {
