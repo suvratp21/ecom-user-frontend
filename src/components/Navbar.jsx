@@ -14,7 +14,7 @@ const Navbar = () => {
   const filterbyCategory = (cat) => {
     setFilteredData(
       products.filter(
-        (data) => data.category.toLowerCase() == cat.toLowerCase()
+        (data) => data.category && data.category.toLowerCase() == cat.toLowerCase()
       )
     );
   };
